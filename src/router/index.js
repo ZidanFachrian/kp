@@ -3,7 +3,7 @@ import Dashboard from '../views/Dashboard.vue'
 import Login from '../views/Login.vue'
 
 import Transaksi from '../views/transaksi/Transaksi.vue'
-import TransaksiCreate from '../views/transaksi/Transaksi.vue'
+import TransaksiCreate from '../views/transaksi/TransaksiCreate.vue'
 
 
 const routes = [
