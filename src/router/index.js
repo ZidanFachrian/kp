@@ -1,13 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import Dashboard from '../views/Dashboard.vue'
+import Login from '../views/Login.vue'
+
+import Transaksi from '../views/transaksi/Transaksi.vue'
+import TransaksiCreate from '../views/transaksi/Transaksi.vue'
 
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
   },
   // {
   //   path: '/about',
@@ -18,9 +26,14 @@ const routes = [
   //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   // }
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: Dashboard
+    path: '/transaksi',
+    name: 'transaksi.index',
+    component: Transaksi
+  },
+  {
+    path: '/transaksi/create',
+    name: 'transaksi.create',
+    component: TransaksiCreate
   },
 ]
 

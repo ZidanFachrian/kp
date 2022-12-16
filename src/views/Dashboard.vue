@@ -1,19 +1,10 @@
 <template>
- 
-    <div class="min-height-300 bg-primary position-absolute w-100">
-
-    </div>
-
-    <Sidebar/>
-    
-     
-  <main class="main-content position-relative border-radius-lg ">
-
-    <Navbar/>
-
-   
+    <div class="min-height-300 bg-primary position-absolute w-100"></div>
+    <SidebarHero/>
+    <main class="main-content position-relative border-radius-lg">
+    <NavbarHero msg="Dashboard"/>
     <div class="container-fluid py-4">
-   <div class="row">
+      <div class="row">
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
           <div class="card">
             <div class="card-body p-3">
@@ -114,24 +105,21 @@
           </div>
         </div>
       </div>
-      
-  
     </div>
-  </main>
-  
+    </main>
 </template>
 
 <script>
 // @ is an alias to /src
-import Sidebar from '@/components/Sidebar.vue'
-import Navbar from '@/components/Navbar.vue'
+import SidebarHero from '@/components/section/SidebarHero.vue'
+import NavbarHero from '@/components/section/NavbarHero.vue'
 
 
 export default {
   name: 'Dashboard',
   components: {
-    Sidebar,
-    Navbar
+    SidebarHero,
+    NavbarHero
   }
 }
 </script>
