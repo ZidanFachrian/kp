@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '../views/Dashboard.vue'
+import Home from '../views/Home.vue'
+
+
 import Login from '../views/Login.vue'
+
+import Dashboard from '../views/Dashboard.vue'
+
 
 import Transaksi from '../views/transaksi/Transaksi.vue'
 import TransaksiCreate from '../views/transaksi/TransaksiCreate.vue'
@@ -23,8 +28,14 @@ import ContactEdit from '../views/contact/ContactEdit.vue'
 
 
 const routes = [
+
   {
     path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/login',
     name: 'Login',
     component: Login
   },

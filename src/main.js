@@ -16,6 +16,7 @@ import './assets/css/argon-dashboard.min.css'
 import './assets/css/nucleo-icons.css'
 import './assets/css/nucleo-svg.css'
 import 'sweetalert2/dist/sweetalert2.min.css';
+
 app.use(VueSweetalert2);
 
 
