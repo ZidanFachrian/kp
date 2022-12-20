@@ -3,7 +3,7 @@
    <div class="min-height-300 bg-primary position-absolute w-100"></div>
     <SidebarHero/>
     <main class="main-content position-relative border-radius-lg">
-    <NavbarHero msg="Transaksi Create"/>
+    <NavbarHero msg="Transaksi Edit"/>
     <div class="container-fluid py-4">
       <div class="row">
         <div class="col-md-8">
@@ -74,7 +74,7 @@
                  <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <button class="btn btn-primary">Tambah</button>
+                    <button class="btn btn-primary">Update</button>
                     <router-link :to="{ name: 'transaksi.index'}" class="btn btn-danger mx-4">Back</router-link>
                   </div>
                   </div>
@@ -102,7 +102,7 @@ import NavbarHero from '@/components/section/NavbarHero.vue'
 
 
 export default {
-  name: 'TransaksiCreate',
+  name: 'TransaksiEdit',
   components: {
     SidebarHero,
     NavbarHero

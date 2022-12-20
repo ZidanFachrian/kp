@@ -3,7 +3,7 @@
    <div class="min-height-300 bg-primary position-absolute w-100"></div>
     <SidebarHero/>
     <main class="main-content position-relative border-radius-lg">
-    <NavbarHero msg="Transaksi Create"/>
+    <NavbarHero msg="Kegiatan Create"/>
     <div class="container-fluid py-4">
       <div class="row">
         <div class="col-md-8">
@@ -15,8 +15,8 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Tanggal</label>
-                    <input class="form-control" type="date" >
+                    <label for="example-text-input" class="form-control-label">Nama Kegiatan</label>
+                    <input class="form-control" type="text" >
                   </div>
                   </div>
                 </div>
@@ -24,10 +24,10 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Jenis Transaksi</label>
+                    <label for="example-text-input" class="form-control-label">Sifat Kegiatan</label>
                     <select name="" class="form-control" id="">
-                      <option value="iuran">Iuran</option>
-                      <option value="kas">Kas</option>
+                      <option value="Penting">Penting</option>
+                      <option value="Available">Available</option>
                     </select>
                   </div>
                   </div>
@@ -36,49 +36,46 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Kas</label>
-                    <select name="" class="form-control" id="">
-                      <option value="iuran">Iuran</option>
-                      <option value="kas">Kas</option>
-                    </select>
-                  </div>
-                  </div>
-                </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Nama Anggota</label>
-                    <input class="form-control" type="text" >
-                  </div>
-                  </div>
-              </div>
-
-               <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Keterangan</label>
+                    <label for="example-text-input" class="form-control-label">Lokasi Kegiatan</label>
                     <textarea name="" id="" class="form-control"></textarea>
                   </div>
                   </div>
               </div>
 
                 <div class="row">
+                      <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Tanggal Rencana</label>
+                    <input class="form-control" type="date">
+                  </div>
+                </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Tanggal Realisasi</label>
+                    <input class="form-control" type="date">
+                  </div>
+                </div>
+                </div>
+              
+
+
+               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Jumlah</label>
-                    <input class="form-control" type="text" >
+                    <label for="example-text-input" class="form-control-label">Deskripsi Kegiatan</label>
+                    <textarea name="" id="" class="form-control"></textarea>
                   </div>
                   </div>
               </div>
-                 <div class="row">
+
+             <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
                     <button class="btn btn-primary">Tambah</button>
-                    <router-link :to="{ name: 'transaksi.index'}" class="btn btn-danger mx-4">Back</router-link>
-                  </div>
+                    <router-link :to="{ name: 'kegiatan.index'}" class="btn btn-danger mx-4">Back</router-link>
                   </div>
                 </div>
+            </div>
            
               </div>
             </div>
@@ -102,7 +99,7 @@ import NavbarHero from '@/components/section/NavbarHero.vue'
 
 
 export default {
-  name: 'TransaksiCreate',
+  name: 'KegiatanCreate',
   components: {
     SidebarHero,
     NavbarHero

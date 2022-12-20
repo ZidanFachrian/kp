@@ -4,7 +4,7 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <router-link :to="{ name: 'Dashboard' }" class="navbar-brand m-0 ms-5">
-        <img src="assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+        <img src="/assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">Magang</span>
       </router-link>
     </div>
@@ -22,10 +22,38 @@
           <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Master Menu</h6>
         </li>
+
+             <li class="nav-item">
+          <router-link :to="{ name: 'contact.index' }" class="nav-link ">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-badge text-danger text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Contact</span>
+          </router-link>
+        </li>
+
+         <li class="nav-item">
+          <router-link :to="{ name: 'kegiatan.index' }" class="nav-link ">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-collection text-info text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Kegiatan</span>
+          </router-link>
+        </li>
+
+          <li class="nav-item">
+          <router-link :to="{ name: 'pengumuman.index' }" class="nav-link ">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-calendar-grid-58 text-success text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Pengumuman</span>
+          </router-link>
+        </li>
+
         <li class="nav-item">
           <router-link :to="{ name: 'transaksi.index' }" class="nav-link ">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+              <i class="ni ni-credit-card text-warning text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Transaksi</span>
           </router-link>

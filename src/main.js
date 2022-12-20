@@ -1,15 +1,24 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
 import router from './router'
+
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+
 
 
 const app = createApp(App);
 // css
-/* eslint-disable */
+
 import "bootstrap"
 import './assets/css/argon-dashboard.min.css'
 import './assets/css/nucleo-icons.css'
 import './assets/css/nucleo-svg.css'
+import 'sweetalert2/dist/sweetalert2.min.css';
+app.use(VueSweetalert2);
+
+
 
 
 // import "./assets/js/plugins/perfect-scrollbar.min.js"
